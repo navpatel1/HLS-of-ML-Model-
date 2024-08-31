@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+	<Message severity="INFO" prefix="[COSIM 212-47]" key="COSIM_TCL_47_1115" tag="" content="Using XSIM for RTL simulation."/>
+	<Message severity="INFO" prefix="[COSIM 212-14]" key="COSIM_TCL_14_1084" tag="" content="Instrumenting C test bench ..."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1427" tag="" content="Running &apos;/home/navdeep/Vivado/2018.2/bin/unwrapped/lnx64.o/apcc&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1428" tag="" content="For user &apos;navdeep&apos; on host &apos;navdeep-HP-ProDesk-600-G6-Microtower-PC&apos; (Linux_x86_64 version 6.2.0-32-generic) on Wed Apr 17 17:53:32 IST 2024"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1429" tag="" content="On os Ubuntu 22.04.2 LTS"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1430" tag="" content="In directory &apos;/home/navdeep/Desktop/vlsi_4.0/vlsi_proj/solution1/sim/wrapc&apos;"/>
+	<Message severity="ERROR" prefix="[APCC 202-10]" key="APCC_10_1603" tag="" content="clang compile failed: child process exited abnormally"/>
+	<Message severity="ERROR" prefix="[APCC 202-1]" key="APCC_1_1595" tag="" content="ProcessSources failed"/>
+	<Message severity="INFO" prefix="[APCC 202-3]" key="APCC_3_1610" tag="" content="Tmp directory is /tmp/apcc_db_navdeep/183271713356612317337"/>
+	<Message severity="ERROR" prefix="[APCC 202-1]" key="APCC_1_1612" tag="" content="APCC failed."/>
+	<Message severity="ERROR" prefix="[COSIM 212-317]" key="COSIM_TCL_317_1189" tag="" content="C++ compile error."/>
+	<Message severity="ERROR" prefix="[COSIM 212-321]" key="COSIM_TCL_321_1193" tag="" content="EXE file generate failed."/>
+	<Message severity="ERROR" prefix="[COSIM 212-321]" key="COSIM_TCL_321_1193" tag="" content="EXE file generate failed."/>
+	<Message severity="ERROR" prefix="[COSIM 212-331]" key="COSIM_TCL_331_1203" tag="" content="Aborting co-simulation: C simulation failed, compilation errors."/>
+</Messages>

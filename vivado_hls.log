@@ -1,0 +1,55 @@
+INFO: [HLS 200-10] Running '/home/navdeep/Vivado/2018.2/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'navdeep' on host 'navdeep-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 6.2.0-32-generic) on Wed Apr 17 17:53:28 IST 2024
+INFO: [HLS 200-10] On os Ubuntu 22.04.2 LTS
+INFO: [HLS 200-10] In directory '/home/navdeep/Desktop/vlsi_4.0'
+INFO: [HLS 200-10] Opening project '/home/navdeep/Desktop/vlsi_4.0/vlsi_proj'.
+INFO: [HLS 200-10] Opening solution '/home/navdeep/Desktop/vlsi_4.0/vlsi_proj/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xa7a12tcsg325-1q'
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "/home/navdeep/Vivado/2018.2/tps/lnx64/gcc-6.2.0/bin/g++"
+   Compiling apatb_navdepp.cpp
+   Compiling (apcc) vlsi_eval4.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/home/navdeep/Vivado/2018.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'navdeep' on host 'navdeep-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 6.2.0-32-generic) on Wed Apr 17 17:53:32 IST 2024
+INFO: [HLS 200-10] On os Ubuntu 22.04.2 LTS
+INFO: [HLS 200-10] In directory '/home/navdeep/Desktop/vlsi_4.0/vlsi_proj/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+In file included from /home/navdeep/Desktop/vlsi_4.0/vlsi_eval4.c:1:
+In file included from /usr/include/math.h:43:
+/usr/include/x86_64-linux-gnu/bits/floatn.h:74:52: error: unsupported machine mode '__TC__'
+typedef _Complex float __cfloat128 __attribute__ ((__mode__ (__TC__)));
+                                                   ^
+/usr/include/x86_64-linux-gnu/bits/floatn.h:86:9: error: unknown type name '__float128'; did you mean '__cfloat128'?
+typedef __float128 _Float128;
+        ^
+/usr/include/x86_64-linux-gnu/bits/floatn.h:74:24: note: '__cfloat128' declared here
+typedef _Complex float __cfloat128 __attribute__ ((__mode__ (__TC__)));
+                       ^
+2 errors generated.
+ERROR: [APCC 202-10] clang compile failed: child process exited abnormally
+ERROR: [APCC 202-1] ProcessSources failed
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_navdeep/183271713356612317337
+ERROR: [APCC 202-1] APCC failed.
+In file included from apatb_navdepp.cpp:18:0:
+/home/navdeep/Vivado/2018.2/include/ap_stream.h:70:2: warning: #warning AP_STREAM macros are deprecated. Please use hls::stream<> from "hls_stream.h" instead. [-Wcpp]
+ #warning AP_STREAM macros are deprecated. Please use hls::stream<> from "hls_stream.h" instead.
+  ^~~~~~~
+make: *** [cosim.tv.mk:73: obj/vlsi_eval4.c_pre.c.tb.o] Error 1
+ERROR: [COSIM 212-317] C++ compile error.
+ERROR: [COSIM 212-321] EXE file generate failed.
+ERROR: [COSIM 212-321] EXE file generate failed.
+ERROR: [COSIM 212-331] Aborting co-simulation: C simulation failed, compilation errors.
+command 'ap_source' returned error code
+    while executing
+"source /home/navdeep/Desktop/vlsi_4.0/vlsi_proj/solution1/cosim.tcl"
+    invoked from within
+"hls::main /home/navdeep/Desktop/vlsi_4.0/vlsi_proj/solution1/cosim.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 hls::main {*}$args"
+    (procedure "hls_proc" line 5)
+    invoked from within
+"hls_proc $argv"

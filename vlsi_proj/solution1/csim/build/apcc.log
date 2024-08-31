@@ -1,0 +1,6 @@
+INFO: [HLS 200-10] Running '/home/navdeep/Vivado/2018.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'navdeep' on host 'navdeep-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 6.2.0-32-generic) on Wed Apr 17 17:50:34 IST 2024
+INFO: [HLS 200-10] On os Ubuntu 22.04.2 LTS
+INFO: [HLS 200-10] In directory '/home/navdeep/Desktop/vlsi_4.0/vlsi_proj/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_navdeep/179751713356434598165
+INFO: [APCC 202-1] APCC is done.

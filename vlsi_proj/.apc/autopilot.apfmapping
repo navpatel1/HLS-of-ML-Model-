@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="vlsi_eval4.c" path="/home/navdeep/Desktop/vlsi_4.0/vlsi_eval4.c"/>
+    <originFiles name="vlsi_eval4.h" path="/home/navdeep/Desktop/vlsi_4.0/vlsi_eval4.h"/>
+  </source>
+  <testbench>
+    <originFiles name="vlsi_eval4_test_suite.c" path="/home/navdeep/Desktop/vlsi_4.0/vlsi_eval4_test_suite.c"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

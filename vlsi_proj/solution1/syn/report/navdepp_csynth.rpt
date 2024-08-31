@@ -1,0 +1,165 @@
+
+
+================================================================
+== Vivado HLS Report for 'navdepp'
+================================================================
+* Date:           Wed Apr 17 17:51:41 2024
+
+* Version:        2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)
+* Project:        vlsi_proj
+* Solution:       solution1
+* Product family: aartix7
+* Target device:  xa7a12tcsg325-1q
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     0.000|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    ?|    ?|    ?|    ?|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+------+------+----------+-----------+-----------+------+----------+
+        |          |   Latency   | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name|  min |  max |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+------+------+----------+-----------+-----------+------+----------+
+        |- Loop 1  |  1024|  1024|         1|          -|          -|  1024|    no    |
+        +----------+------+------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+-------+------+
+|       Name      | BRAM_18K| DSP48E|   FF  |  LUT |
++-----------------+---------+-------+-------+------+
+|DSP              |        -|      -|      -|     -|
+|Expression       |        -|      -|      -|     -|
+|FIFO             |        -|      -|      -|     -|
+|Instance         |        -|      -|      -|     -|
+|Memory           |        -|      -|      -|     -|
+|Multiplexer      |        -|      -|      -|    15|
+|Register         |        -|      -|      2|     -|
++-----------------+---------+-------+-------+------+
+|Total            |        0|      0|      2|    15|
++-----------------+---------+-------+-------+------+
+|Available        |       40|     40|  16000|  8000|
++-----------------+---------+-------+-------+------+
+|Utilization (%)  |        0|      0|   ~0  |  ~0  |
++-----------------+---------+-------+-------+------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    +-----------+----+-----------+-----+-----------+
+    |    Name   | LUT| Input Size| Bits| Total Bits|
+    +-----------+----+-----------+-----+-----------+
+    |ap_NS_fsm  |  15|          3|    1|          3|
+    +-----------+----+-----------+-----+-----------+
+    |Total      |  15|          3|    1|          3|
+    +-----------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------+---+----+-----+-----------+
+    |    Name   | FF| LUT| Bits| Const Bits|
+    +-----------+---+----+-----+-----------+
+    |ap_CS_fsm  |  2|   0|    2|          0|
+    +-----------+---+----+-----+-----------+
+    |Total      |  2|   0|    2|          0|
+    +-----------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------------------------+-----+-----+------------+-----------------------------+--------------+
+|               RTL Ports              | Dir | Bits|  Protocol  |        Source Object        |    C Type    |
++--------------------------------------+-----+-----+------------+-----------------------------+--------------+
+|ap_clk                                |  in |    1| ap_ctrl_hs |           navdepp           | return value |
+|ap_rst                                |  in |    1| ap_ctrl_hs |           navdepp           | return value |
+|ap_start                              |  in |    1| ap_ctrl_hs |           navdepp           | return value |
+|ap_done                               | out |    1| ap_ctrl_hs |           navdepp           | return value |
+|ap_idle                               | out |    1| ap_ctrl_hs |           navdepp           | return value |
+|ap_ready                              | out |    1| ap_ctrl_hs |           navdepp           | return value |
+|conv2d_22_input_input_array_address0  | out |   14|  ap_memory | conv2d_22_input_input_array |     array    |
+|conv2d_22_input_input_array_ce0       | out |    1|  ap_memory | conv2d_22_input_input_array |     array    |
+|conv2d_22_input_input_array_we0       | out |    1|  ap_memory | conv2d_22_input_input_array |     array    |
+|conv2d_22_input_input_array_d0        | out |   32|  ap_memory | conv2d_22_input_input_array |     array    |
+|conv2d_22_input_input_array_q0        |  in |   32|  ap_memory | conv2d_22_input_input_array |     array    |
+|conv2d_22_input_input_array_address1  | out |   14|  ap_memory | conv2d_22_input_input_array |     array    |
+|conv2d_22_input_input_array_ce1       | out |    1|  ap_memory | conv2d_22_input_input_array |     array    |
+|conv2d_22_input_input_array_we1       | out |    1|  ap_memory | conv2d_22_input_input_array |     array    |
+|conv2d_22_input_input_array_d1        | out |   32|  ap_memory | conv2d_22_input_input_array |     array    |
+|conv2d_22_input_input_array_q1        |  in |   32|  ap_memory | conv2d_22_input_input_array |     array    |
+|conv2d_22_input_input_ndim            |  in |   64|   ap_none  |  conv2d_22_input_input_ndim |    pointer   |
+|conv2d_22_input_input_numel           |  in |   64|   ap_none  | conv2d_22_input_input_numel |    pointer   |
+|conv2d_22_input_input_shape_address0  | out |    3|  ap_memory | conv2d_22_input_input_shape |     array    |
+|conv2d_22_input_input_shape_ce0       | out |    1|  ap_memory | conv2d_22_input_input_shape |     array    |
+|conv2d_22_input_input_shape_we0       | out |    1|  ap_memory | conv2d_22_input_input_shape |     array    |
+|conv2d_22_input_input_shape_d0        | out |   64|  ap_memory | conv2d_22_input_input_shape |     array    |
+|conv2d_22_input_input_shape_q0        |  in |   64|  ap_memory | conv2d_22_input_input_shape |     array    |
+|conv2d_22_input_input_shape_address1  | out |    3|  ap_memory | conv2d_22_input_input_shape |     array    |
+|conv2d_22_input_input_shape_ce1       | out |    1|  ap_memory | conv2d_22_input_input_shape |     array    |
+|conv2d_22_input_input_shape_we1       | out |    1|  ap_memory | conv2d_22_input_input_shape |     array    |
+|conv2d_22_input_input_shape_d1        | out |   64|  ap_memory | conv2d_22_input_input_shape |     array    |
+|conv2d_22_input_input_shape_q1        |  in |   64|  ap_memory | conv2d_22_input_input_shape |     array    |
+|dense_23_output_array_address0        | out |   14|  ap_memory |    dense_23_output_array    |     array    |
+|dense_23_output_array_ce0             | out |    1|  ap_memory |    dense_23_output_array    |     array    |
+|dense_23_output_array_we0             | out |    1|  ap_memory |    dense_23_output_array    |     array    |
+|dense_23_output_array_d0              | out |   32|  ap_memory |    dense_23_output_array    |     array    |
+|dense_23_output_array_q0              |  in |   32|  ap_memory |    dense_23_output_array    |     array    |
+|dense_23_output_array_address1        | out |   14|  ap_memory |    dense_23_output_array    |     array    |
+|dense_23_output_array_ce1             | out |    1|  ap_memory |    dense_23_output_array    |     array    |
+|dense_23_output_array_we1             | out |    1|  ap_memory |    dense_23_output_array    |     array    |
+|dense_23_output_array_d1              | out |   32|  ap_memory |    dense_23_output_array    |     array    |
+|dense_23_output_array_q1              |  in |   32|  ap_memory |    dense_23_output_array    |     array    |
+|dense_23_output_ndim                  |  in |   64|   ap_none  |     dense_23_output_ndim    |    pointer   |
+|dense_23_output_numel                 |  in |   64|   ap_none  |    dense_23_output_numel    |    pointer   |
+|dense_23_output_shape_address0        | out |    3|  ap_memory |    dense_23_output_shape    |     array    |
+|dense_23_output_shape_ce0             | out |    1|  ap_memory |    dense_23_output_shape    |     array    |
+|dense_23_output_shape_we0             | out |    1|  ap_memory |    dense_23_output_shape    |     array    |
+|dense_23_output_shape_d0              | out |   64|  ap_memory |    dense_23_output_shape    |     array    |
+|dense_23_output_shape_q0              |  in |   64|  ap_memory |    dense_23_output_shape    |     array    |
+|dense_23_output_shape_address1        | out |    3|  ap_memory |    dense_23_output_shape    |     array    |
+|dense_23_output_shape_ce1             | out |    1|  ap_memory |    dense_23_output_shape    |     array    |
+|dense_23_output_shape_we1             | out |    1|  ap_memory |    dense_23_output_shape    |     array    |
+|dense_23_output_shape_d1              | out |   64|  ap_memory |    dense_23_output_shape    |     array    |
+|dense_23_output_shape_q1              |  in |   64|  ap_memory |    dense_23_output_shape    |     array    |
++--------------------------------------+-----+-----+------------+-----------------------------+--------------+
+
